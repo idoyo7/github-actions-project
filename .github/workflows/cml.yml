@@ -10,7 +10,8 @@ jobs:
       - name: Train model
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
+        run: |    
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
           python train.py
           echo "MODEL METRICS"
