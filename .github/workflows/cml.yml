@@ -17,8 +17,7 @@ jobs:
           echo "MODEL METRICS" >> report.md
           cat metrics.txt >> report.md
 
-
           echo "## Data viz" >> report.md
           echo "![feature_importance](./feature_importance.png)" >> report.md
           echo "![residuals](./residuals.png)" >> report.md
-          cml-send-comment report.md          
+          cml comment create report.md --title "Model Training Report"
