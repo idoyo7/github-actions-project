@@ -7,6 +7,9 @@ import numpy as np
 # Set random seed
 seed = 42
 
+def test_example():
+    assert 2 + 2 == 4
+
 ################################
 ########## DATA PREP ###########
 ################################
